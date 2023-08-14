@@ -1,0 +1,28 @@
+/bin - Contém binários e executáveis importantes, esses executáveis podem ser utilizados a qualquer momento a partir do terminal chamando seus nomes. São arquivos como vim, gzip, gunzip, tar, entre outros.
+
+/sbin - Contém binários e executáveis essenciais para o super usuário(root).
+
+/lib - Contém códigos compartilhados entre os binários
+
+/usr
+-> Dentro do /usr
+-- ->/bin e /sbin Contém binários e executáveis não essenciais para o sistema operacional e feitos para uso para o usuário final.
+-- ->/local - Contém binários compilados manualmente pelo usuário de forma a não conflitar com outros binários.
+-- ->/etc - Contém arquivos de configuração editáveis(editable text configuration)
+-- ->/home - Coném as pastas pessoais de cada usuário
+-- -- -> Dentro do /home
+-- -- -> /nome_do_usuario - Contém as pastas com arquivos pessoais do usuário.
+$PATH - É um arquivo que mapeia a localização de todos os binários para execução no terminal.
+which - Comando que permite identificar a localidade de um binário.
+
+/boot - Contém os arquivos necessários para inicializar o sistema.
+
+/dev - Contém arquivos de dispositivos que interfaceiam o sistema e permitem interação com eles.
+
+/opt - Contém softwares de add-on.
+
+/var - Contém arquivos de variáveis dinâmicas como logs e cache.
+
+/tmp - Contém arquivos temporários que não serão mantidos no boot.
+
+/proc - É um diretório que não existe em disco e é carregado na memória para que o kernel do linux mantenha registro dos processos ocorrendo.
