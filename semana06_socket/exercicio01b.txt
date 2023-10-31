@@ -1,0 +1,10 @@
+a) O tamanho máximo de pacote que pode ser transmitido desfragmentado pela rede utilizando TCP ou UDP é de 1500 bytes.
+Considerando o tamanho dos cabeçalhos empregados em cada protocolo, no entanto, o UDP tem maior disponibilidade de bytes
+para transmissão de seu payload, transmitindo mais dados por pacote.
+
+b) Um arquivo grande pode ser transmitido pela rede fragmentado em múltiplos pacotes.
+Ao ser enviado utilizando o protocolo TCP o pacote é fragmentado em múltiplos pacotes com garantia de entrega, 
+entrega ordenada, e com manutenção da conexão por padrão.
+Em contrapartida, o protocolo UDP não conta com nenhuma das garantias previstas anteriormente, apenas com fragmentação
+e envio de parcelas do pacote. Para se garantir que o arquivo encontrou o seu destino corretamente e foi recebido com sucesso é necessária
+implementação de uma camada de software na camada de aplicação que confira as garantias mencionadas anteriormente.
